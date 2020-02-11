@@ -9,19 +9,20 @@
     <body>
         <div class="container">
             <h1 class="project-title">Health Care Near Us</h1>
-            <h2 class="about">ABOUT  HCNU</h2>
-                <p>Our mission is to provide information regarding the healthcare institutions and providers so, you can make informed decisions for all the healthcare needs for you and your loved ones. You can choose the institutions or providers according to your needs, their ratings by medicare and proximity to you.</p>
-                <div class="container2">
-                    <div class="actions">
-                        <div class="zipCode">
-                            <input type="text" placeholder="Enter Zip Code" id="inputZipCode"></input>
+            <div class="about">ABOUT  HCNU</div>
+            <div id = "p1">Our mission is to provide information regarding the healthcare institutions and providers so, you can make informed decisions for all the healthcare needs for you and your loved ones. You can choose the institutions or providers according to your needs, their ratings by medicare and proximity to you.
+            </div>
+            <div class="container2">
+                <div class="actions">
+                    <div class="zipCode">
+                        <input type="text" placeholder="Enter Zip Code" id="zipCodeInput"></input>
+                    </div>
+                    <div class="info">
+                        <button type="Submit" name="button" id="hospitals">HOSPITALS</button>
                         </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="hospitals">HOSPITALS</button>
-                        </div>
-                        <div class="info">
+                    <div class="info">
                             <button type="Submit" name="button" id="nursingHome">NURSING HOMES</button>
-                        </div>
+                    </div>
                         <div class="info">
                             <button type="Submit" name="button" id="physicians">PHYSICIANS</button>
                         </div>
@@ -41,13 +42,13 @@
                             <button type="Submit" name="button" id="longTermCar">LONG TERM CARE</button>
                         </div>
                     </div>
-                    <div class="address">
-                    </div>
-                    <div class="map">
-                        <h3>Google Maps</h3>
-                        <a href src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></a>
-                    </div>
+                <div class="address">
                 </div>
+                <div class="map">
+                    <h3>Google Maps</h3>
+                    <a href src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></a>
+                </div>
+            </div>
         </div>
         <script src="app.js" charset="utf-8"></script>
     </body>
