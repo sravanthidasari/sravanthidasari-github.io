@@ -1,55 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
-        <title>Health Care Near Us</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="project-title">Health Care Near Us</h1>
-            <div class="about">ABOUT  HCNU</div>
-            <div id = "p1">Our mission is to provide information regarding the healthcare institutions and providers so, you can make informed decisions for all the healthcare needs for you and your loved ones. You can choose the institutions or providers according to your needs, their ratings by medicare and proximity to you.
-            </div>
-            <div class="container2">
-                <div class="actions">
-                    <div class="zipCode">
-                        <input type="text" placeholder="Enter Zip Code" id="zipCodeInput"></input>
-                    </div>
-                    <div class="info">
-                        <button type="Submit" name="button" id="hospitals">HOSPITALS</button>
-                        </div>
-                    <div class="info">
-                            <button type="Submit" name="button" id="nursingHome">NURSING HOMES</button>
-                    </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="physicians">PHYSICIANS</button>
-                        </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="homeHealth">HOME HEALTH</button>
-                        </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="dialysis">DIALYSIS FACILITIES</button>
-                        </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="hospice">HOSPICE</button>
-                        </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="rehab">INPATIENT-REHAB</button>
-                        </div>
-                        <div class="info">
-                            <button type="Submit" name="button" id="longTermCar">LONG TERM CARE</button>
-                        </div>
-                    </div>
-                <div class="address">
-                </div>
-                <div class="map">
-                    <h3>Google Maps</h3>
-                    <a href src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></a>
-                </div>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <title>Health Care Near Us</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="project-title">Health Care Near Us</h1>
+        <div class="about">ABOUT  HCNU</div>
+        <div id="p1">Our mission is to provide information regarding the medicare certified healthcare institutions and their quality of care measured by Five star quality rating system by CMS so, you can make informed decisions for all the healthcare needs for you and your loved ones. You can choose the institutions according to your needs, their ratings by medicare and proximity to you.
         </div>
-        <script src="app.js" charset="utf-8"></script>
-    </body>
+        <div class="container2">
+            <div class="actions">
+                <div class="info">
+                    <input type="text" placeholder="Enter Zip Code" id="zipCodeInput"></input>
+                </div>
+                <div class="info">
+                    <button type="Submit" name="button" id="hospitals">HOSPITALS</button>
+                </div>
+                <div class="info">
+                    <button type="Submit" name="button" id="nursingHome">NURSING HOMES</button>
+                </div>
+
+                <div class="info">
+                    <button type="Submit" name="button" id="homeHealth">HOME HEALTH</button>
+                </div>
+                <div class="info">
+                    <button type="Submit" name="button" id="dialysis">DIALYSIS FACILITIES</button>
+                </div>
+            </div>
+            <div class="address">
+            </div>
+            <!-- <div class="map">
+                <h3>Google Maps</h3>
+                <div id="mapArea"></div>
+            </div> -->
+        </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
 </html>
