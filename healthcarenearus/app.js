@@ -21,7 +21,7 @@ const facilities = [
     }
 ];
 
-const validateZipCode = () =>{
+const validateZipCode = () => {
     let zipCodeStr = $('#zipCodeInput').val();
     let zipCodeNum = parseInt(zipCodeStr);
     if (!zipCodeNum || zipCodeNum <= 9999 || zipCodeNum > 99999) {
@@ -92,13 +92,9 @@ const getAddress = (e) => {
 };
 
 const getUrlWithFilter = (id) => {
-    let facility = facilities.find(function(f) {
+    const facility = facilities.find(function(f) {
         return f.type === id;
     });
-
-    if (!facility) {
-        alert('Unknown choice, try again...');
-    }
 
     const zipCodeInput = $("#zipCodeInput").val();
     return `https://data.medicare.gov/resource/${facility.api}.json?${facility.zipFilter}=${zipCodeInput}`;
@@ -122,12 +118,25 @@ const fetchHospitals = (e) => {
     });
 };
 
+const showAboutBox = () => {
+    $("div.aboutBox").css('display', 'block');
+}
+
+const hideAboutBox = () => {
+    $("div.aboutBox").css('display', 'none');
+}
+
 $(() => {
     // Attach a handler to toggle the description under about
     $(".about").click(function() {
-        $("#p1").animate({
-            height: "toggle"
-        });
+        showAboutBox();
+        // $("#p1").animate({
+        //     height: "toggle"
+        // });
+    });
+
+    $("#closeAboutBox").click(function() {
+        hideAboutBox();
     });
 
     // Attach a handler to fetch the entries based on zip

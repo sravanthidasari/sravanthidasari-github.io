@@ -8,10 +8,6 @@ html {
     min-width: 300px;
 }
 
-body {
-    min-width: 300px;
-}
-
 div.container {
     margin: 0 0.5em;
 }
@@ -48,8 +44,40 @@ div.container {
     color: rgb(0,79,130);
 }
 
+div.aboutBox {
+    background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+div.aboutBoxContent {
+    background-color: white;
+	/* height: 350px;
+	width: 550px; */
+    width: 40%;
+    border-radius: 0.5em;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	padding: 2%;
+	line-height: 120%;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+div.aboutBoxContent button {
+    padding: 1em 2em;
+    margin: 3em auto 0 auto;
+    border-radius: 0.5em;
+}
+
 div#p1 {
-    display: none;
+    /* display: none;
     margin: 0 2em 1em 2em;
     background: rgb(0,79,130);
     color: white;
@@ -61,7 +89,7 @@ div#p1 {
     text-align: justify;
     padding: 1.5em 2.2em;
     border-bottom-left-radius: .5em;
-    border-bottom-right-radius: .5em;
+    border-bottom-right-radius: .5em; */
 }
 
 .container2 {

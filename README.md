@@ -1,6 +1,6 @@
 # Projects by Sravanthi
 
-## Health Care Near Us
+## [Health Care Near Us](/healthcarenearus)
 Our mission is to provide information regarding the medicare certified healthcare institutions and their quality of care measured by Five-Star Quality Rating System by CMS, so you can make informed decisions for all the healthcare needs for you and your loved ones. You can choose the institutions according to your needs, their ratings by medicare and proximity to you.
 
 You can access this project [here](/healthcarenearus).
