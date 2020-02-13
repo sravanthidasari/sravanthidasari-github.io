@@ -1,0 +1,129 @@
+/* @media screen and (min-width): 900px) {
+    article {
+        padding: 1rem 3rem;
+    }
+} */
+
+html {
+    min-width: 300px;
+}
+
+body {
+    min-width: 300px;
+}
+
+div.container {
+    margin: 0 0.5em;
+}
+
+.project-title {
+    font-family: Arial;
+    font-style: normal;
+    font-size: 2.6em;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(0,79,130);
+    text-align: center;
+    margin: 0;
+    padding: 0.4em;
+}
+
+.about {
+    display: block;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(0,79,153);
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.about:hover {
+    background: lightblue;
+    color: rgb(0,79,130);
+}
+
+div#p1 {
+    display: none;
+    margin: 0 2em 1em 2em;
+    background: rgb(0,79,130);
+    color: white;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    padding: 1.5em 2.2em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 0.5em;
+}
+
+div.actions {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* margin: 30px; */
+}
+
+.info input {
+    text-align: center;
+    font-style: normal;
+    font-size: 15px;
+    width: 19vw;
+    height: 6vh;
+    border-radius: .5em;
+    border-color: orange;
+    cursor: pointer;
+}
+
+.info {
+    margin-bottom: 0.5em;
+}
+
+.info button {
+    text-overflow: eclipse;
+    background-color: lightblue;
+    color: rgb(0,79,153);
+    width: 20vw;
+    height: 8vh;
+    border-radius: .5em;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.info button:hover{
+    background: orange;
+}
+
+.address {
+    margin-left: 0.5em;
+    flex-grow: 1;
+}
+.itemInfo{
+    padding: 0.5em;
+}
+
+.itemInfo.lightBlue {
+    background: lightblue;
+    border-bottom: 10px;
+    padding: 0.5em;
+}
+
+.rating {
+    Color: blue;
+}
